@@ -46,7 +46,7 @@
     width: 100px;
   }
 
-  a Link{
+  .navbar-left a Link, .navbar-right a Link{
       background:transparent !important;
   }
 
