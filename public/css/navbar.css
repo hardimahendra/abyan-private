@@ -45,6 +45,11 @@
     line-height:40px;
     width: 100px;
   }
+
+  a Link{
+      background:transparent !important;
+  }
+
   .navbar-left a:hover { 
     color: gold;
     background: rgba(255, 255, 255, 0.4);
