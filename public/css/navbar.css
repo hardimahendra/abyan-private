@@ -46,10 +46,6 @@
     width: 100px;
   }
 
-  .navbar-left a:hover Link, .navbar-right a:hover Link{
-      background:transparent !important;
-  }
-
   .navbar-left a:hover { 
     color: gold;
     background: rgba(255, 255, 255, 0.4);
