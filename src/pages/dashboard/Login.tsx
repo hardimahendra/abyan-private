@@ -15,11 +15,11 @@ export function Login() {
           <input type="text" id="username" />
           <input type="password" id="password" />
           <button>
-            <a><Link to="/notfound">Lupa Password</Link></a>
+            <Link to="/notfound">Lupa Password</Link>
           </button>
         </div>
         <div className="back-to-home">
-          <a type="button"><Link to="/home">Batal</Link></a>
+          <Link to="/home">Batal</Link>
         </div>
       </div>
     </div>
