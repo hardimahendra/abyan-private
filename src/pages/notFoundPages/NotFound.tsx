@@ -1,6 +1,5 @@
 import React from 'react';
-import { Footer } from '../../components/Footer';
-import { Navbar } from '../../components/Navbar';
+import { Link } from 'react-router-dom';
 
 export function NotFound() {
   return (
@@ -12,8 +11,8 @@ export function NotFound() {
           <h5>Pages Dalam Proses Pengembangan </h5>
           <h5>Pages is still under development</h5>
         <div className="back-to-home">
-            <a type="button" href="/home">
-              Back Home
+            <a type="button">
+              <Link to="/home">Back Home</Link>
             </a>
         </div>
         </div>
