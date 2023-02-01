@@ -46,7 +46,7 @@
     width: 100px;
   }
 
-  .navbar-left a Link, .navbar-right a Link{
+  .navbar-left a:hover Link, .navbar-right a:hover Link{
       background:transparent !important;
   }
 
