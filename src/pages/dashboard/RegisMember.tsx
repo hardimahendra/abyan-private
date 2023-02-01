@@ -6,25 +6,23 @@ import { Link } from 'react-router-dom';
 export function RegisMember() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="container-regisMember">
         <div className="content-regisMember">
           <div>
             <h1>Pilih Jenis Pendaftaran</h1>
           </div>
           <div className="opsi-regis">
-            <a><Link to="/notfound">Daftar Jadi Siswa</Link></a>
-            <a><Link to="/notfound">Daftar Jadi Guru</Link></a>
-            <a><Link to="/notfound">Daftar Jadi Staff</Link></a>
+            <Link to="/notfound">Daftar Jadi Siswa</Link>
+            <Link to="/notfound">Daftar Jadi Guru</Link>
+            <Link to="/notfound">Daftar Jadi Staff</Link>
           </div>
           <div className="back-to-home">
-            <a type="button">
               <Link to="/home">Batal</Link>
-            </a>
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 }
