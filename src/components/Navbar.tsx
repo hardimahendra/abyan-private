@@ -1,5 +1,5 @@
 import { Dropdown } from "react-bootstrap";
-
+import { Link } from 'react-router-dom';
 export function Navbar(){
     return(
         <>
@@ -9,33 +9,39 @@ export function Navbar(){
                 <nav className="container-navbar">
                 <div className="navbar-wrapper">
                     <div className="brand">
-                    <a href="/">
-                        <img src="./assets/icons/abyanprivate.png" alt="brand" />
-                    </a>
+                        <a>
+                            <Link to="/">
+                                <img src="./assets/icons/abyanprivate.png" alt="brand" />
+                            </Link>
+                        </a>
                     </div>
                     <div className="navbar-left">
-                        <a aria-current="page" href="/home">Home</a>
-                        <a href="/profil">Profil </a>
-                        <a href="/galery">Galeri </a>
-                        <a href="/daftarGuru">Daftar Guru</a>
-                        <a href="/contacts">Kontak </a>
+                        <a aria-current="page"><Link to="/home">Home</Link></a>
+                        <a><Link to="/profil">Profil</Link> </a>
+                        <a><Link to="/galery">Galeri</Link> </a>
+                        <a><Link to="/daftarGuru">Daftar Guru</Link></a>
+                        <a><Link to="/contacts">Kontak</Link></a>
                     </div>
                     <div className="navbar-right">
-                        <a type="button" href="/login"> Login </a>
-                        <a type="button" href="/regisMember"> Sign Up </a>
+                        <a type="button"><Link to="/login">Login</Link></a>
+                        <a type="button"><Link to="/regisMember">Sign Up</Link></a>
                     </div>
                     <div className="navbar-toggle">
                         <nav id="content-toggle">
-                            <a aria-current="page" href="/home">Home</a>
-                            <a href="/profil">Profil </a>
-                            <a href="/galery">Galeri </a>
-                            <a href="/daftarGuru">Daftar Guru </a>
-                            <a href="/contacts">Kontak </a>
+                            <a aria-current="page"><Link to="/home">Home</Link></a>
+                            <a><Link to="/profil">Profil</Link></a>
+                            <a><Link to="/galery">Galeri</Link></a>
+                            <a><Link to="/daftarGuru">Daftar Guru </Link></a>
+                            <a><Link to="/contacts">Kontak</Link></a>
                             <Dropdown className="dropdown">
                                 <Dropdown.Toggle id="dropdown-split-basic"></Dropdown.Toggle>
                                 <Dropdown.Menu className="dropdown-menu">
-                                    <Dropdown.Item href="/login" className="drop-login">Login</Dropdown.Item>
-                                    <Dropdown.Item href="/regisMember" className="drop-regis">Sign Up</Dropdown.Item>
+                                    <Dropdown.Item className="drop-login">
+                                        <Link to="/login">Login</Link>
+                                    </Dropdown.Item>
+                                    <Dropdown.Item className="drop-regis">
+                                        <Link to="/regisMember">Sign Up</Link>
+                                    </Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </nav>
