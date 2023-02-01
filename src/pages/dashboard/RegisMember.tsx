@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from '../../components/Navbar';
 import { Footer } from '../../components/Footer';
+import { Link } from 'react-router-dom';
 
 export function RegisMember() {
   return (
@@ -12,13 +13,13 @@ export function RegisMember() {
             <h1>Pilih Jenis Pendaftaran</h1>
           </div>
           <div className="opsi-regis">
-            <a href="/notfound">Daftar Jadi Siswa</a>
-            <a href="/notfound">Daftar Jadi Guru</a>
-            <a href="/notfound">Daftar Jadi Staff</a>
+            <a><Link to="/notfound">Daftar Jadi Siswa</Link></a>
+            <a><Link to="/notfound">Daftar Jadi Guru</Link></a>
+            <a><Link to="/notfound">Daftar Jadi Staff</Link></a>
           </div>
           <div className="back-to-home">
-            <a type="button" href="/home">
-              Batal
+            <a type="button">
+              <Link to="/home">Batal</Link>
             </a>
           </div>
         </div>
