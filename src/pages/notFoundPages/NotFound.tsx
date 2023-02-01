@@ -11,9 +11,7 @@ export function NotFound() {
           <h5>Pages Dalam Proses Pengembangan </h5>
           <h5>Pages is still under development</h5>
         <div className="back-to-home">
-            <a type="button">
-              <Link to="/home">Back Home</Link>
-            </a>
+            <Link to="/home">Back Home</Link>
         </div>
         </div>
       </div>
