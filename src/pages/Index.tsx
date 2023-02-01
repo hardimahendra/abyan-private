@@ -16,11 +16,9 @@ export function Index(){
                     <h4>We pride ourselves on helping people from all walks of life achieve their goals. help improve the quality of education from an early age providing the best method of learning can create breakthroughs in knowledge.</h4>
                     <div className="more">
                         <h5>For more information</h5>
-                        <a>
-                            <Link to="/home">
-                                See More
-                            </Link>
-                        </a>
+                        <Link to="/home">
+                            See More
+                        </Link>
                     </div>
                     </div>
                 </div>
